@@ -10,4 +10,6 @@ class emp extends Model
     use HasFactory;
 
     protected $table = 'emp_info';
+    public $timestamps = false;
+   
 }

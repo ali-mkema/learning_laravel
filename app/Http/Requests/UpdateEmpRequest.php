@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateEmpRequest extends FormRequest
+class UpdateEmpRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,6 +23,7 @@ class CreateEmpRequest extends FormRequest
     {
         return [
             //
+            'id'=>['required', 'numeric'],
             'first_name'=>['required', 'string','max:50', 'min:3'],
             'last_name'=>['required', 'string','max:50', 'min:3'],
             'gender'=>['required','string','in:Male,Female'],
