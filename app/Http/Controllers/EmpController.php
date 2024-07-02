@@ -7,14 +7,16 @@ use Illuminate\Http\Request;
 use App\Http\Requests\CreateEmpRequest; 
 use App\Http\Requests\UpdateEmpRequest;
 use App\Models\emp;
+use App\Traits\HttpResponses;
 
 class EmpController extends Controller
 {
+    use HttpResponses;
     //
     public function createEmp(Request $request){
         return view('pages.about', ['title2'=>"jaribu"]);
-    }
-
+    } 
+        // function to Insert employee
     public function create(CreateEmpRequest $request){
        
         $request->validated();
@@ -78,5 +80,14 @@ class EmpController extends Controller
         }
     }  
 
+
+    // API FUNCTION
+    public function empList(request $request){
+        $data = emp::where('id', $request->ido)->get();
+        if($data){
+            return $this->success($data, 'Successful', 200);
+        }
+        return $this->error('', 'Problem in fetching data', 500);
+    }
             
 }

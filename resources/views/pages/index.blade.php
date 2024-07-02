@@ -27,8 +27,8 @@
                          <td>{{ $item->nationality }}</td>
                          <td>{{ $item->address}}</td>
                          <td>{{ $item->department }}</td>
-                         <td><a href="{{url('/emp/modify-emp/'. $item->id)}}"><button type="submit" class="btn btn-outline-primary">Edit</button></a> </td>
-                         <td><a href="{{ url('/emp/delete-emp/' . $item->id) }}'"><button type="submit" class="btn btn-outline-danger">Delete</button></a> </td>
+                         <td><a href="{{url('/emp/modify-emp/'. $item->id)}}"><button type="submit" class="btn btn-outline-primary btn-sm">Edit</button></a> </td>
+                         <td><a href="{{ url('/emp/delete-emp/' . $item->id) }}'"><button type="submit" class="btn btn-outline-danger btn-sm">Delete</button></a> </td>
                      </tr>
                  @endforeach
              </tbody>

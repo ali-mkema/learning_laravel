@@ -37,18 +37,16 @@ class CreateEmpRequest extends FormRequest
         return [
             'first_name.required' => 'First name is required!',
             'first_name.max' => 'Too long string',
-            'first_name.min' => 'Enter at least 4 character',
+            'first_name.min' => 'Enter at least 3 character',
 
-            'last_name.required' => 'First name is required!',
+            'last_name.required' => 'Last name is required!',
             'last_name.max' => 'Too long string',
-            'last_name.min' => 'Enter at least 4 character',
+            'last_name.min' => 'Enter at least 3 character',
 
-            'gender.required' => 'First name is required!',
-            'gender.max' => 'Too long string',
-            'gender.min' => 'Enter at least 4 character',
+            'gender.required' => 'Gender!',
+            'gender.in' => 'Gender must be Male or Female',
             
-
-            'nationality.required' => 'First name is required!',
+            'nationality.required' => 'Nationality is required!',
             'nationality.max' => 'Too long string',
             'nationality.min' => 'Enter at least 4 character',
 
@@ -56,7 +54,7 @@ class CreateEmpRequest extends FormRequest
             'address.max' => 'Too long string',
             'address.min' => 'Enter at least 4 character',
 
-            'department.required' => 'First name is required!',
+            'department.required' => 'Department is required!',
             'department.max' => 'Too long string',
             'department.min' => 'Enter at least 4 character',
         ];

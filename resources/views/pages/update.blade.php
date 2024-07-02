@@ -57,7 +57,7 @@
                     <label for="colFormLabel" class="col-lg-2 col-form-label col-form-label-lg">Department:</label>
                     <div class="col-md-6">
                     <input type="text" name="department" value={{$items->department}} class="form-control form-control-lg" id="colFormLabelLg" placeholder="" >
-                    <p style="padding-top: 10px;margin-left:40%"><button type="submit" class="btn btn-lg btn-primary">Insert</button></p>
+                    <p style="padding-top: 10px;margin-left:40%"><button type="submit" class="btn btn-lg btn-primary">Updae Information</button></p>
                     </div>
               </div>
             </form>

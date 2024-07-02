@@ -24,7 +24,7 @@ Route::get('/', function () {
 
   //Route::get('/', 'PagesController@index');
 
-    Route::get('/', [PagesController::class,'index']);
+    Route::get('/', [EmpController::class,'index']);
 
     Route::get('/about', [PagesController::class,'about']);
 

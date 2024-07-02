@@ -16,7 +16,7 @@ class PagesController extends Controller
 
     public function about(){
         $title2 = "ADD NEW EMPLOYEE";
-        return view('pages.about')->with('title2',$title2); 
+        return view('pages.about')->with('title2', $title2); 
     }
 
     public function services(){

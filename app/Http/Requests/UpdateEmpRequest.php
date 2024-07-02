@@ -40,24 +40,24 @@ class UpdateEmpRequest extends FormRequest
             'first_name.max' => 'Too long string',
             'first_name.min' => 'Enter at least 4 character',
 
-            'last_name.required' => 'First name is required!',
+            'last_name.required' => 'last_name is required!',
             'last_name.max' => 'Too long string',
             'last_name.min' => 'Enter at least 4 character',
 
-            'gender.required' => 'First name is required!',
+            'gender.required' => 'gender is required!',
             'gender.max' => 'Too long string',
             'gender.min' => 'Enter at least 4 character',
             
 
-            'nationality.required' => 'First name is required!',
+            'nationality.required' => 'nationality is required!',
             'nationality.max' => 'Too long string',
             'nationality.min' => 'Enter at least 4 character',
 
-            'address.required' => 'First name is required!',
+            'address.required' => 'address is required!',
             'address.max' => 'Too long string',
             'address.min' => 'Enter at least 4 character',
 
-            'department.required' => 'First name is required!',
+            'department.required' => 'department is required!',
             'department.max' => 'Too long string',
             'department.min' => 'Enter at least 4 character',
         ];
